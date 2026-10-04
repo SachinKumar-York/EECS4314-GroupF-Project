@@ -94,9 +94,21 @@ h1 span {
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.member-list .student-id {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(29, 29, 31, 0.6);
+  font-variant-numeric: tabular-nums;
 }
 
 .member-list li:hover {
