@@ -116,6 +116,66 @@ h1 span {
   box-shadow: 0 8px 18px rgba(215, 25, 32, 0.08);
 }
 
+.documents {
+  margin-top: 40px;
+}
+
+.documents h2 {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+}
+
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.document-card {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 22px 18px;
+  border: 1px solid rgba(215, 25, 32, 0.16);
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--york-soft), #fff);
+  color: var(--york-ink);
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.document-card:hover,
+.document-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(215, 25, 32, 0.4);
+  box-shadow: 0 8px 18px rgba(215, 25, 32, 0.1);
+}
+
+.document-card:focus-visible {
+  outline: 3px solid rgba(215, 25, 32, 0.35);
+  outline-offset: 3px;
+}
+
+.document-icon {
+  color: var(--york-red);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.document-title {
+  font-weight: 700;
+}
+
+.document-action {
+  color: var(--york-red-dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
   .card {
     padding: 40px 20px;
@@ -123,5 +183,9 @@ h1 span {
 
   .member-list li {
     font-size: 1rem;
+  }
+
+  .document-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -7,6 +7,8 @@ This is a minimal static website for Group F.
 - `index.html` — main page
 - `styles.css` — styling
 - `script.js` — small entrance animation
+- `files/Project-Presentation-1.pdf` — Project Presentation 1
+- `files/Project-Report-1.pdf` — Project Report 1
 
 ## Preview locally
 
